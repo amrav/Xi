@@ -2,7 +2,7 @@ var Xi = require('../../xi.js');
 var spawn = require('child_process').spawn;
 var path = require('path');
 var MUSIC_DIR = path.resolve(__dirname, 'downloads');
-var VLC = '/Applications/VLC.app/Contents/MacOS/VLC';
+var VLC = 'vlc';
 var playing = false;
 var vlc = spawn(VLC, ['-I', 'rc'], {
     cwd: MUSIC_DIR,
