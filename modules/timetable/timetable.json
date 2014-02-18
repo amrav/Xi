@@ -1,0 +1,28 @@
+{
+    "Monday": {
+	"OS": ["9:30am", "10:30am"],
+	"Networks": ["10:30am", "11:30am"], 
+	"DBMS Lab": ["1:30pm", "4:30pm"],
+	"DBMS": ["4:30pm", "5:30pm"]
+    },
+    "Tuesday": {
+	"Networks": ["7:30am", "9:30am"],
+	"Networks Lab": ["1:30pm", "4:30pm"]
+    },
+    "Wednesday": {
+	"OS": ["7:30am", "9:30am"],
+	"Computational Number Theory": ["9:30am", "10:30am"],
+	"BS": ["1:30pm", "3:30pm"],
+	"EVS": ["3:30pm", "5:30pm"]
+    },
+    "Thursday": {
+	"Computational Number Theory": ["8:30am", "9:30am"],
+	"OS": ["9:30am", "10:30am"],
+	"Networks": ["11:30am", "12:30pm"],
+	"DBMS": ["4:30pm", "5:30pm"]
+    },
+    "Friday": {
+	"Computational Number Theory": ["10:30am", "12:30pm"],
+	"DBMS": ["4:30pm", "6:00pm"]
+    }
+}

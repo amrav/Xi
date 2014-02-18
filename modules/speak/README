@@ -1,0 +1,5 @@
+Dependencies: 
+
+1) 'say' -> npm install say
+2) Verify that say itself is working, from the node command line.
+You may need to install other software, refer to the say documentation.

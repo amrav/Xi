@@ -1,0 +1,8 @@
+This module uses Google Chrome's speech to text capabilities to provide voice
+recognition for Xi.
+
+Installation:
+
+1) Install chrome-stt as a Chrome extension.
+(Settings -> Load Unpacked Extension -> select chrome-stt directory)
+2) Download jquery-2.1.0.min.js and put it inside the chrome-stt directory.
