@@ -23,44 +23,27 @@ function containsObject(obj, list) {
 
 function isQuestion(query){
     question_actions = ["how", "what" , "when" , "who" , "whom" ];
-    if ( containsObject(nlpparser.classify(query).action,question_actions)){
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return containsObject(nlpparser.classify(query).action,question_actions);
 }
 
 
 function analyzeXML( xml){
-
-    
     var doc = new dom().parseFromString(xml);
-    var nodes = xpath.select("//subpod/plaintext", doc);
-    if(nodes){
-        answer = nodes.data;
-        console.log("The answer is :");
-        console.log(answer);
+    var nodes = xpath.select("//pod[@title='Result']/subpod/plaintext", doc);
+    if(nodes.length != 0){
+        var result = nodes[0].firstChild.data;
+        answer = result;
         Xi.speak(answer);
     }
 }
 
 function query( q){
     request(query_url+q , function (error , response ,body) {
-        console.log('verbose', "wolfram: Querying " , q);
-        console.log(q);
         analyzeXML(body);
     });
 }
 
-
-
-
-//analyzeXML(barackxml);
-
 Xi.channels.subscribe(Xi.channels.sensory.up, function (channel, message) {
-
     if( isQuestion(message.text))
     {
         query(message.text);
