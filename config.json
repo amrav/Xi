@@ -1,6 +1,13 @@
 {
     "modules": [
-
+	{
+	    "name": "Hello World",
+	    "path": "./modules/hello-world.js"
+	},
+	{
+	    "name": "Echo",
+	    "path": "./modules/echo/main.js"
+	},
 	{
 	    "name": "Timetable",
 	    "path": "./modules/timetable/main.js"
@@ -14,10 +21,17 @@
 	    "path": "./modules/chrome-stt/server.js"
 	},
 	{
+	    "name": "Reminder",
+	    "path": "./modules/reminder/main.js"
+	},
+	{
 	    "name": "News",
 	    "path": "./modules/news/main.js"
 	},
-
+	{
+	    "name": "Google Calendar",
+	    "path": "./modules/googlecl/calendar.js"
+	},
 	{
 	    "name": "Ack",
 	    "path": "./modules/sentiment/ack.js"
@@ -25,12 +39,7 @@
 	{
 	    "name": "Youtube Music",
 	    "path": "./modules/music/main.js"
-	},
-        {
-	    "name": "Wolfram",
-	    "path": "./modules/wolfram/main.js"
 	}
-
     ]
 }
-
+	
