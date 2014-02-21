@@ -1,0 +1,4 @@
+Module that interfaces with Wolfram Alpha
+Requires the presence of auth.json file in the root directory.
+
+"wolfram_appid" : <YOUR_WOLFRAM_ALPHA_APP_ID>
